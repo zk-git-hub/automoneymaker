@@ -63,12 +63,12 @@ while True:
             ma15 = get_ma15("KRW-BTC")
             current_price = get_current_price("KRW-BTC")
             if target_price < current_price and ma15 < current_price:
-                krw = upbit.get_balance("KRW")
+                krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-BTC", krw*0.49975)
                     post_message(myToken,"#amm", "BTC buy : " +str(buy_result))
         else:
-            btc = upbit.get_balance("BTC")
+            btc = get_balance("BTC")
             if btc > 0.00008:
                 sell_result = upbit.sell_market_order("KRW-BTC", btc*0.9995)
                 post_message(myToken,"#amm", "BTC buy : " +str(sell_result))
