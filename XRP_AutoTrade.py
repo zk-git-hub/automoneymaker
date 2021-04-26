@@ -63,12 +63,12 @@ while True:
             ma15 = get_ma15("KRW-XRP")
             current_price = get_current_price("KRW-XRP")
             if target_price < current_price and ma15 < current_price:
-                krw = get_balance("KRW")
+                krw = upbit.get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-XRP", krw*0.49975)
                     post_message(myToken,"#amm", "XRP buy : " +str(buy_result))
         else:
-            xrp = get_balance("XRP")
+            xrp = upbit.get_balance("XRP")
             if xrp > 0.00008:
                 sell_result = upbit.sell_market_order("KRW-XRP", xrp*0.9995)
                 post_message(myToken,"#amm", "XRP buy : " +str(sell_result))
