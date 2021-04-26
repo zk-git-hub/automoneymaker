@@ -63,12 +63,12 @@ while True:
             ma15 = get_ma15("KRW-SNT")
             current_price = get_current_price("KRW-SNT")
             if target_price < current_price and ma15 < current_price:
-                krw = get_balance("KRW")
+                krw = upbit.get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-SNT", krw*0.49975)
                     post_message(myToken,"#amm", "SNT buy : " +str(buy_result))
         else:
-            snt = get_balance("SNT")
+            snt = upbit.get_balance("SNT")
             if snt > 0.00008:
                 sell_result = upbit.sell_market_order("KRW-SNT", snt*0.9995)
                 post_message(myToken,"#amm", "SNT buy : " +str(sell_result))
