@@ -59,7 +59,7 @@ while True:
         end_time = start_time + datetime.timedelta(days=1)
 
         if start_time < now < end_time - datetime.timedelta(seconds=1200):
-            target_price = get_target_price("KRW-BTC", 0.3)
+            target_price = get_target_price("KRW-BTC", 0.1)
             btc = get_balance("BTC")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-BTC")
@@ -67,20 +67,20 @@ while True:
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-BTC", krw*0.3)
-                    post_message(myToken,"#amm", "BTC buy : " +str(buy_result))
+                    post_message(myToken,"#amm", "BTC buy : 보유금액 30%")
             if target_price*1.18 < current_price:
                 btc = get_balance("BTC")
                 krw = get_balance("KRW")
                 current_price = get_current_price("KRW-BTC")
                 if btc*current_price > 200000:
                     sell_result = upbit.sell_market_order("KRW-BTC", btc*0.25)
-                    post_message(myToken,"#amm", "BTC buy : " +str(sell_result))
+                    post_message(myToken,"#amm", "BTC sell on profit: 보유코인 25%")
         else:
             btc = get_balance("BTC")
             current_price = get_current_price("KRW-BTC")
             if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-BTC", btc*0.9995)
-                post_message(myToken,"#amm", "BTC buy : " +str(sell_result))
+                post_message(myToken,"#amm", "BTC sell all : 장마감")
         time.sleep(1)
     except Exception as e:
         print(e)

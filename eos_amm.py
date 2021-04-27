@@ -67,20 +67,20 @@ while True:
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-EOS", krw*0.3)
-                    post_message(myToken,"#amm", "EOS buy : " +str(buy_result))
+                    post_message(myToken,"#amm", "EOS buy : 보유금액 30%")
             if target_price*1.18 < current_price:
                 btc = get_balance("EOS")
                 krw = get_balance("KRW")
                 current_price = get_current_price("KRW-EOS")
                 if btc*current_price > 200000:
                     sell_result = upbit.sell_market_order("KRW-EOS", btc*0.25)
-                    post_message(myToken,"#amm", "EOS buy : " +str(sell_result))
+                    post_message(myToken,"#amm", "EOS sell on profit: 보유코인 25%")
         else:
             btc = get_balance("EOS")
             current_price = get_current_price("KRW-EOS")
             if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-EOS", btc*0.9995)
-                post_message(myToken,"#amm", "EOS buy : " +str(sell_result))
+                post_message(myToken,"#amm", "EOS sell all : 장마감")
         time.sleep(1)
     except Exception as e:
         print(e)

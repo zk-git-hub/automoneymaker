@@ -67,20 +67,20 @@ while True:
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-ETC", krw*0.3)
-                    post_message(myToken,"#amm", "ETC buy : " +str(buy_result))
+                    post_message(myToken,"#amm", "ETC buy : 보유금액 30%")
             if target_price*1.18 < current_price:
                 btc = get_balance("ETC")
                 krw = get_balance("KRW")
                 current_price = get_current_price("KRW-ETC")
                 if btc*current_price > 200000:
                     sell_result = upbit.sell_market_order("KRW-ETC", btc*0.25)
-                    post_message(myToken,"#amm", "ETC buy : " +str(sell_result))
+                    post_message(myToken,"#amm", "ETC sell on profit: 보유코인 25%")
         else:
             btc = get_balance("ETC")
             current_price = get_current_price("KRW-ETC")
             if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-ETC", btc*0.9995)
-                post_message(myToken,"#amm", "ETC buy : " +str(sell_result))
+                post_message(myToken,"#amm", "ETC sell all : 장마감")
         time.sleep(1)
     except Exception as e:
         print(e)
