@@ -63,7 +63,7 @@ while True:
             btc = get_balance("ETH")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-ETH")
-            if target_price < current_price and krw/btc*current_price > 5 and target_price*1.15 > current_price:             
+            if target_price < current_price and krw > 5*btc*current_price and target_price*1.15 > current_price:             
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-ETH", krw*0.3)
@@ -81,7 +81,7 @@ while True:
             if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-ETH", btc*0.9995)
                 post_message(myToken,"#amm", "ETH buy : " +str(sell_result))
-        time.sleep(1)
+        time.sleep(5)
     except Exception as e:
         print(e)
         post_message(myToken,"#amm", e)

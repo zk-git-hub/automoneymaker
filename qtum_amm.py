@@ -63,7 +63,7 @@ while True:
             btc = get_balance("QTUM")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-QTUM")
-            if target_price < current_price and krw/btc*current_price > 5 and target_price*1.15 > current_price:             
+            if target_price < current_price and krw > 5*btc*current_price and target_price*1.15 > current_price:             
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-QTUM", krw*0.3)
