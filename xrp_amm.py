@@ -67,20 +67,20 @@ while True:
                 krw = get_balance("KRW")
                 if krw > 5000:
                     buy_result = upbit.buy_market_order("KRW-XRP", krw*0.3)
-                    post_message(myToken,"#amm", "XRP buy : " +str(buy_result))
+                    post_message(myToken,"#amm", "XRP buy : 보유금액 30%")
             if target_price*1.18 < current_price:
                 btc = get_balance("XRP")
                 krw = get_balance("KRW")
                 current_price = get_current_price("KRW-XRP")
                 if btc*current_price > 200000:
                     sell_result = upbit.sell_market_order("KRW-XRP", btc*0.25)
-                    post_message(myToken,"#amm", "XRP buy : " +str(sell_result))
+                    post_message(myToken,"#amm", "XRP sell on profit: 보유코인 25%")
         else:
             btc = get_balance("XRP")
             current_price = get_current_price("KRW-XRP")
             if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-XRP", btc*0.9995)
-                post_message(myToken,"#amm", "XRP buy : " +str(sell_result))
+                post_message(myToken,"#amm", "XRP sell all : 장마감")
         time.sleep(1)
     except Exception as e:
         print(e)
