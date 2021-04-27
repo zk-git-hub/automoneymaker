@@ -48,9 +48,9 @@ def get_current_price(ticker):
 
 # 로그인
 upbit = pyupbit.Upbit(access, secret)
-print("BTC-autotrade start")
+print("BTC-autotradestart")
 # 시작 메세지 슬랙 전송
-post_message(myToken,"#amm", "BTC-autotrade start")
+post_message(myToken,"#amm", "BTC-autotradestart")
 
 while True:
     try:
@@ -58,23 +58,31 @@ while True:
         start_time = get_start_time("KRW-BTC")
         end_time = start_time + datetime.timedelta(days=1)
 
-        if start_time < now < end_time - datetime.timedelta(seconds=600):
-            target_price = get_target_price("KRW-BTC", 0.4)
+        if start_time < now < end_time - datetime.timedelta(seconds=1200):
+            target_price = get_target_price("KRW-BTC", 0.3)
             btc = get_balance("BTC")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-BTC")
-            if target_price < current_price and krw > btc*current_price:             
+            if target_price < current_price and krw/btc*current_price > 5 and target_price*1.15 > current_price:             
                 krw = get_balance("KRW")
                 if krw > 5000:
-                    buy_result = upbit.buy_market_order("KRW-BTC", krw*0.5)
+                    buy_result = upbit.buy_market_order("KRW-BTC", krw*0.3)
                     post_message(myToken,"#amm", "BTC buy : " +str(buy_result))
+            if target_price*1.18 < current_price:
+                btc = get_balance("BTC")
+                krw = get_balance("KRW")
+                current_price = get_current_price("KRW-BTC")
+                if btc*current_price > 200000:
+                    sell_result = upbit.sell_market_order("KRW-BTC", btc*0.25)
+                    post_message(myToken,"#amm", "BTC buy : " +str(sell_result))
         else:
             btc = get_balance("BTC")
-            if btc > 0.00008:
+            current_price = get_current_price("KRW-BTC")
+            if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-BTC", btc*0.9995)
                 post_message(myToken,"#amm", "BTC buy : " +str(sell_result))
-        time.sleep(3)
+        time.sleep(1)
     except Exception as e:
         print(e)
         post_message(myToken,"#amm", e)
-        time.sleep(60)
+        time.sleep(1)

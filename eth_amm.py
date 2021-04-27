@@ -48,9 +48,9 @@ def get_current_price(ticker):
 
 # 로그인
 upbit = pyupbit.Upbit(access, secret)
-print("ETH-autotrade start")
+print("ETH-autotradestart")
 # 시작 메세지 슬랙 전송
-post_message(myToken,"#amm", "ETH-autotrade start")
+post_message(myToken,"#amm", "ETH-autotradestart")
 
 while True:
     try:
@@ -58,23 +58,31 @@ while True:
         start_time = get_start_time("KRW-ETH")
         end_time = start_time + datetime.timedelta(days=1)
 
-        if start_time < now < end_time - datetime.timedelta(seconds=600):
+        if start_time < now < end_time - datetime.timedelta(seconds=1200):
             target_price = get_target_price("KRW-ETH", 0.1)
             btc = get_balance("ETH")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-ETH")
-            if target_price < current_price and krw > btc*current_price:             
+            if target_price < current_price and krw/btc*current_price > 5 and target_price*1.15 > current_price:             
                 krw = get_balance("KRW")
                 if krw > 5000:
-                    buy_result = upbit.buy_market_order("KRW-ETH", krw*0.5)
+                    buy_result = upbit.buy_market_order("KRW-ETH", krw*0.3)
                     post_message(myToken,"#amm", "ETH buy : " +str(buy_result))
+            if target_price*1.18 < current_price:
+                btc = get_balance("ETH")
+                krw = get_balance("KRW")
+                current_price = get_current_price("KRW-ETH")
+                if btc*current_price > 200000:
+                    sell_result = upbit.sell_market_order("KRW-ETH", btc*0.25)
+                    post_message(myToken,"#amm", "ETH buy : " +str(sell_result))
         else:
             btc = get_balance("ETH")
-            if btc > 0.00008:
+            current_price = get_current_price("KRW-ETH")
+            if btc*current_price > 5000:
                 sell_result = upbit.sell_market_order("KRW-ETH", btc*0.9995)
                 post_message(myToken,"#amm", "ETH buy : " +str(sell_result))
-        time.sleep(3)
+        time.sleep(1)
     except Exception as e:
         print(e)
         post_message(myToken,"#amm", e)
-        time.sleep(60)
+        time.sleep(1)
