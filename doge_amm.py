@@ -59,7 +59,7 @@ while True:
         end_time = start_time + datetime.timedelta(days=1)
 
         if start_time < now < end_time - datetime.timedelta(seconds=1200):
-            target_price = get_target_price("KRW-DOGE", 0.1)
+            target_price = get_target_price("KRW-DOGE", 0.4)
             btc = get_balance("DOGE")
             krw = get_balance("KRW")
             current_price = get_current_price("KRW-DOGE")
