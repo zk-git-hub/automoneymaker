@@ -58,7 +58,7 @@ while True:
         start_time = get_start_time("KRW-ETC")
         end_time = start_time + datetime.timedelta(days=1)
 
-        if start_time < now < end_time - datetime.timedelta(seconds=1200):
+        if start_time < now < end_time - datetime.timedelta(seconds=120):
             target_price = get_target_price("KRW-ETC", 0.5)
             btc = get_balance("ETC")
             krw = get_balance("KRW")
