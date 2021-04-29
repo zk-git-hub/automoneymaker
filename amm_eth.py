@@ -111,5 +111,6 @@ while True:
     #에러메세지 출력
     except Exception as e:
         print(e)
-        post_message(myToken,"#amm", "ETH error : " +e)
+        post_message(myToken,"#amm", "ETH error")
+        post_message(myToken,"#amm", e)
         time.sleep(1)

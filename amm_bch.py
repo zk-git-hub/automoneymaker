@@ -111,5 +111,6 @@ while True:
     #에러메세지 출력
     except Exception as e:
         print(e)
-        post_message(myToken,"#amm", "BCH error : " +e)
+        post_message(myToken,"#amm", "BCH error")
+        post_message(myToken,"#amm", e)
         time.sleep(1)
