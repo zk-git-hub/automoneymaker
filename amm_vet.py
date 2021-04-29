@@ -111,5 +111,5 @@ while True:
     #에러메세지 출력
     except Exception as e:
         print(e)
-        post_message(myToken,"#amm", e)
+        post_message(myToken,"#amm", "VET error : " +e)
         time.sleep(1)
