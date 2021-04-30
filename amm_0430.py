@@ -61,7 +61,7 @@ post_message(myToken,"#amm", "  에이다-ADA")
 post_message(myToken,"#amm", "  칠리즈-CHZ")
 post_message(myToken,"#amm", "  던프로토콜-DAWN")
 post_message(myToken,"#amm", "  페이코인-PCI")
-post_message(myToken,"#amm", "  비체인-VET")
+# post_message(myToken,"#amm", "  비체인-VET")
 post_message(myToken,"#amm", "  이더리움클래식-ETC")
 time.sleep(1)
 
@@ -84,7 +84,7 @@ while True:
             target_price_chz = get_target_price("KRW-CHZ", 0.2)
             target_price_dawn = get_target_price("KRW-DAWN", 0.2)
             target_price_pci = get_target_price("KRW-PCI", 0.4)
-            target_price_vet = get_target_price("KRW-VET", 0.3)
+            # target_price_vet = get_target_price("KRW-VET", 0.3)
             target_price_etc = get_target_price("KRW-ETC", 0.1)
             btc = get_balance("BTC")
             eth = get_balance("ETH")
@@ -95,7 +95,7 @@ while True:
             chz = get_balance("CHZ")
             dawn = get_balance("DAWN")
             pci = get_balance("PCI")
-            vet = get_balance("VET")
+            # vet = get_balance("VET")
             etc = get_balance("ETC")
             current_price_btc = get_current_price("KRW-BTC")
             yesterday_price_btc = get_yesterday_price("KRW-BTC")
@@ -116,8 +116,8 @@ while True:
             yesterday_price_dawn = get_yesterday_price("KRW-DAWN")
             current_price_pci = get_current_price("KRW-PCI")
             yesterday_price_pci = get_yesterday_price("KRW-PCI")
-            current_price_vet = get_current_price("KRW-VET")
-            yesterday_price_vet = get_yesterday_price("KRW-VET")
+            # current_price_vet = get_current_price("KRW-VET")
+            # yesterday_price_vet = get_yesterday_price("KRW-VET")
             current_price_etc = get_current_price("KRW-ETC")
             yesterday_price_etc = get_yesterday_price("KRW-ETC")
             time.sleep(1)
@@ -179,11 +179,11 @@ while True:
                     post_message(myToken,"#amm", "PCI buy : 타겟 구매")
             time.sleep(1)
 
-            if target_price_vet < current_price_vet and 10000 > vet*current_price_vet:
-                if krw > 302000:
-                    buy_result = upbit.buy_market_order("KRW-VET", 300000)
-                    post_message(myToken,"#amm", "VET buy : 타겟 구매")
-            time.sleep(1)
+            # if target_price_vet < current_price_vet and 10000 > vet*current_price_vet:
+            #     if krw > 302000:
+            #         buy_result = upbit.buy_market_order("KRW-VET", 300000)
+            #         post_message(myToken,"#amm", "VET buy : 타겟 구매")
+            # time.sleep(1)
             
             if target_price_etc < current_price_etc and 10000 > etc*current_price_etc:
                 if krw > 302000:
@@ -247,11 +247,11 @@ while True:
                     post_message(myToken,"#amm", "PCI sell: 익절 흐믓")
             time.sleep(1)
 
-            if target_price_vet*1.20 < current_price_vet:
-                if vet*current_price_vet > 100000:
-                    sell_result = upbit.sell_market_order("KRW-VET", vet*0.25)
-                    post_message(myToken,"#amm", "VET sell: 익절 흐믓")
-            time.sleep(1)
+            # if target_price_vet*1.20 < current_price_vet:
+            #     if vet*current_price_vet > 100000:
+            #         sell_result = upbit.sell_market_order("KRW-VET", vet*0.25)
+            #         post_message(myToken,"#amm", "VET sell: 익절 흐믓")
+            # time.sleep(1)
 
             if target_price_etc*1.20 < current_price_etc:
                 if etc*current_price_etc > 100000:
@@ -265,13 +265,13 @@ while True:
                 if krw > 101000:
                     buy_result = upbit.buy_market_order("KRW-BTC", 100000)
                     post_message(myToken,"#amm", "BTC buy : 가즈아 구매")
-             time.sleep(1)
+            time.sleep(1)
 
             if current_price_eth < yesterday_price_eth*0.90 and current_price_eth > yesterday_price_eth*0.82 and 10000 > eth*current_price_eth:
                 if krw > 101000:
                     buy_result = upbit.buy_market_order("KRW-ETH", 100000)
                     post_message(myToken,"#amm", "ETH buy : 가즈아 구매")
-             time.sleep(1)
+            time.sleep(1)
 
             if current_price_eos < yesterday_price_eos*0.90 and current_price_eos > yesterday_price_eos*0.82 and 10000 > eos*current_price_eos:
                 if krw > 101000:
@@ -315,11 +315,11 @@ while True:
                     post_message(myToken,"#amm", "PCI buy : 가즈아 구매")
             time.sleep(1)
 
-            if current_price_vet < yesterday_price_vet*0.90 and current_price_vet > yesterday_price_vet*0.82 and 10000 > vet*current_price_vet:
-                if krw > 101000:
-                    buy_result = upbit.buy_market_order("KRW-VET", 100000)
-                    post_message(myToken,"#amm", "VET buy : 가즈아 구매")
-            time.sleep(1)
+            # if current_price_vet < yesterday_price_vet*0.90 and current_price_vet > yesterday_price_vet*0.82 and 10000 > vet*current_price_vet:
+            #     if krw > 101000:
+            #         buy_result = upbit.buy_market_order("KRW-VET", 100000)
+            #         post_message(myToken,"#amm", "VET buy : 가즈아 구매")
+            # time.sleep(1)
 
             if current_price_etc < yesterday_price_etc*0.90 and current_price_etc > yesterday_price_etc*0.82 and 10000 > etc*current_price_etc:
                 if krw > 101000:
@@ -383,11 +383,11 @@ while True:
                     post_message(myToken,"#amm", "PCI sell all: 망했어요")
             time.sleep(1)
 
-            if current_price_vet < yesterday_price_vet*0.8:
-                if vet*current_price_vet > 5000:
-                    sell_result = upbit.sell_market_order("KRW-VET", vet*0.9995)
-                    post_message(myToken,"#amm", "VET sell all: 망했어요")
-            time.sleep(1)
+            # if current_price_vet < yesterday_price_vet*0.8:
+            #     if vet*current_price_vet > 5000:
+            #         sell_result = upbit.sell_market_order("KRW-VET", vet*0.9995)
+            #         post_message(myToken,"#amm", "VET sell all: 망했어요")
+            # time.sleep(1)
 
             if current_price_etc < yesterday_price_etc*0.8:
                 if etc*current_price_etc > 5000:
@@ -452,11 +452,11 @@ while True:
                 sell_result = upbit.sell_market_order("KRW-PCI", pci*0.9995)
                 post_message(myToken,"#amm", "PCI sell all : 장마감")
 
-            vet = get_balance("VET")
-            current_price_vet = get_current_price("KRW-VET")
-            if vet*current_price_vet > 5000:
-                sell_result = upbit.sell_market_order("KRW-VET", vet*0.9995)
-                post_message(myToken,"#amm", "VET sell all : 장마감")
+            # vet = get_balance("VET")
+            # current_price_vet = get_current_price("KRW-VET")
+            # if vet*current_price_vet > 5000:
+            #     sell_result = upbit.sell_market_order("KRW-VET", vet*0.9995)
+            #     post_message(myToken,"#amm", "VET sell all : 장마감")
 
             etc = get_balance("ETC")
             current_price_etc = get_current_price("KRW-ETC")
