@@ -93,7 +93,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_1")
-            if current_price_doge > yesterday_price_doge*0.90 and doge_avg*0.97 > current_price_doge and 200000 < doge*doge_avg and 390000 > doge*doge_avg:
+            if current_price_doge > yesterday_price_doge*0.90 and doge_avg*0.97 > current_price_doge and 200000 < doge*doge_avg and 290000 > doge*doge_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-DOGE", 100000)
                     post_message(myToken,"#amm", "DOGE add: 100,000")
@@ -132,7 +132,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_2")
-            if current_price_eth > yesterday_price_eth*0.90 and eth_avg*0.97 > current_price_eth and 200000 < eth*eth_avg and 390000 > eth*eth_avg:
+            if current_price_eth > yesterday_price_eth*0.90 and eth_avg*0.97 > current_price_eth and 200000 < eth*eth_avg and 290000 > eth*eth_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-ETH", 100000)
                     post_message(myToken,"#amm", "ETH add: 100,000")
@@ -172,7 +172,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_3")
-            if current_price_eos > yesterday_price_eos*0.90 and eos_avg*0.97 > current_price_eos and 200000 < eos*eos_avg and 390000 > eos*eos_avg:
+            if current_price_eos > yesterday_price_eos*0.90 and eos_avg*0.97 > current_price_eos and 200000 < eos*eos_avg and 290000 > eos*eos_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-EOS", 100000)
                     post_message(myToken,"#amm", "EOS add: 100,000")
@@ -212,7 +212,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_4")
-            if current_price_etc > yesterday_price_etc*0.90 and etc_avg*0.97 > current_price_etc and 200000 < etc*etc_avg and 390000 > etc*etc_avg:
+            if current_price_etc > yesterday_price_etc*0.90 and etc_avg*0.97 > current_price_etc and 200000 < etc*etc_avg and 290000 > etc*etc_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-ETC", 100000)
                     post_message(myToken,"#amm", "ETC add: 100,000")
@@ -251,7 +251,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_5")
-            if current_price_xrp > yesterday_price_xrp*0.90 and xrp_avg*0.97 > current_price_xrp and 200000 < xrp*xrp_avg and 390000 > xrp*xrp_avg:
+            if current_price_xrp > yesterday_price_xrp*0.90 and xrp_avg*0.97 > current_price_xrp and 200000 < xrp*xrp_avg and 290000 > xrp*xrp_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-XRP", 100000)
                     post_message(myToken,"#amm", "XRP add: 100,000")
@@ -290,7 +290,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_6")
-            if current_price_btc > yesterday_price_btc*0.90 and btc_avg*0.97 > current_price_btc and 200000 < btc*btc_avg and 390000 > btc*btc_avg:
+            if current_price_btc > yesterday_price_btc*0.90 and btc_avg*0.97 > current_price_btc and 200000 < btc*btc_avg and 290000 > btc*btc_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-BTC", 100000)
                     post_message(myToken,"#amm", "BTC add: 100,000")
@@ -329,7 +329,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_7")
-            if current_price_ada > yesterday_price_ada*0.90 and ada_avg*0.97 > current_price_ada and 200000 < ada*ada_avg and 390000 > ada*ada_avg:
+            if current_price_ada > yesterday_price_ada*0.90 and ada_avg*0.97 > current_price_ada and 200000 < ada*ada_avg and 290000 > ada*ada_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-ADA", 100000)
                     post_message(myToken,"#amm", "ADA add: 100,000")
@@ -368,7 +368,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_8")
-            if current_price_bch > yesterday_price_bch*0.90 and bch_avg*0.97 > current_price_bch and 200000 < bch*bch_avg and 390000 > bch*bch_avg:
+            if current_price_bch > yesterday_price_bch*0.90 and bch_avg*0.97 > current_price_bch and 200000 < bch*bch_avg and 290000 > bch*bch_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-BCH", 100000)
                     post_message(myToken,"#amm", "BCH add: 100,000")
@@ -407,7 +407,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_9")
-            if current_price_vet > yesterday_price_vet*0.90 and vet_avg*0.97 > current_price_vet and 200000 < vet*vet_avg and 390000 > vet*vet_avg:
+            if current_price_vet > yesterday_price_vet*0.90 and vet_avg*0.97 > current_price_vet and 200000 < vet*vet_avg and 290000 > vet*vet_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-VET", 100000)
                     post_message(myToken,"#amm", "VET add: 100,000")
@@ -446,7 +446,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_10")
-            if current_price_neo > yesterday_price_neo*0.90 and neo_avg*0.97 > current_price_neo and 200000 < neo*neo_avg and 390000 > neo*neo_avg:
+            if current_price_neo > yesterday_price_neo*0.90 and neo_avg*0.97 > current_price_neo and 200000 < neo*neo_avg and 290000 > neo*neo_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-NEO", 100000)
                     post_message(myToken,"#amm", "NEO add: 100,000")
@@ -485,7 +485,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_11")
-            if current_price_link > yesterday_price_link*0.90 and link_avg*0.97 > current_price_link and 200000 < link*link_avg and 390000 > link*link_avg:
+            if current_price_link > yesterday_price_link*0.90 and link_avg*0.97 > current_price_link and 200000 < link*link_avg and 290000 > link*link_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-LINK", 100000)
                     post_message(myToken,"#amm", "LINK add: 100,000")
@@ -524,7 +524,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_12")
-            if current_price_bat > yesterday_price_bat*0.90 and bat_avg*0.97 > current_price_bat and 200000 < bat*bat_avg and 390000 > bat*bat_avg:
+            if current_price_bat > yesterday_price_bat*0.90 and bat_avg*0.97 > current_price_bat and 200000 < bat*bat_avg and 290000 > bat*bat_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-BAT", 100000)
                     post_message(myToken,"#amm", "BAT add: 100,000")
@@ -563,7 +563,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_13")
-            if current_price_ltc > yesterday_price_ltc*0.90 and ltc_avg*0.97 > current_price_ltc and 200000 < ltc*ltc_avg and 390000 > ltc*ltc_avg:
+            if current_price_ltc > yesterday_price_ltc*0.90 and ltc_avg*0.97 > current_price_ltc and 200000 < ltc*ltc_avg and 290000 > ltc*ltc_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-LTC", 100000)
                     post_message(myToken,"#amm", "LTC add: 100,000")
@@ -602,7 +602,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_14")
-            if current_price_btg > yesterday_price_btg*0.90 and btg_avg*0.97 > current_price_btg and 200000 < btg*btg_avg and 390000 > btg*btg_avg:
+            if current_price_btg > yesterday_price_btg*0.90 and btg_avg*0.97 > current_price_btg and 200000 < btg*btg_avg and 290000 > btg*btg_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-BTG", 100000)
                     post_message(myToken,"#amm", "BTG add: 100,000")
@@ -641,7 +641,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_15")
-            if current_price_pci > yesterday_price_pci*0.90 and pci_avg*0.97 > current_price_pci and 200000 < pci*pci_avg and 390000 > pci*pci_avg:
+            if current_price_pci > yesterday_price_pci*0.90 and pci_avg*0.97 > current_price_pci and 200000 < pci*pci_avg and 290000 > pci*pci_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-PCI", 100000)
                     post_message(myToken,"#amm", "PCI add: 100,000")
@@ -680,7 +680,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_16")
-            if current_price_qtum > yesterday_price_qtum*0.90 and qtum_avg*0.97 > current_price_qtum and 200000 < qtum*qtum_avg and 390000 > qtum*qtum_avg:
+            if current_price_qtum > yesterday_price_qtum*0.90 and qtum_avg*0.97 > current_price_qtum and 200000 < qtum*qtum_avg and 290000 > qtum*qtum_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-QTUM", 100000)
                     post_message(myToken,"#amm", "QTUM add: 100,000")
@@ -719,7 +719,7 @@ while True:
 
             #어제 종가 90% 이상, 평단보다 추가 3% 이상 떨어졌을때, 가진 코인 있을때 
             print ("add_17")
-            if current_price_dot > yesterday_price_dot*0.90 and dot_avg*0.97 > current_price_dot and 200000 < dot*dot_avg and 390000 > dot*dot_avg:
+            if current_price_dot > yesterday_price_dot*0.90 and dot_avg*0.97 > current_price_dot and 200000 < dot*dot_avg and 290000 > dot*dot_avg:
                 if krw > 200200:
                     buy_result = upbit.buy_market_order("KRW-DOT", 100000)
                     post_message(myToken,"#amm", "DOT add: 100,000")
