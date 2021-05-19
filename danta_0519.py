@@ -115,12 +115,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-DOGE", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_doge")
-            if current_price_doge < yesterday_price_doge*0.90 and 10000 > doge*doge_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-DOGE", 200000)
-                    post_message(myToken,"#amm", "DOGE gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_doge")
+            # if current_price_doge < yesterday_price_doge*0.90 and 10000 > doge*doge_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-DOGE", 200000)
+            #         post_message(myToken,"#amm", "DOGE gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_doge")
@@ -171,12 +171,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-ETH", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_eth")
-            if current_price_eth < yesterday_price_eth*0.90 and 10000 > eth*eth_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-ETH", 200000)
-                    post_message(myToken,"#amm", "ETH gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_eth")
+            # if current_price_eth < yesterday_price_eth*0.90 and 10000 > eth*eth_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-ETH", 200000)
+            #         post_message(myToken,"#amm", "ETH gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_eth")
@@ -227,12 +227,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-EOS", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_eos")
-            if current_price_eos < yesterday_price_eos*0.90 and 10000 > eos*eos_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-EOS", 200000)
-                    post_message(myToken,"#amm", "EOS gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_eos")
+            # if current_price_eos < yesterday_price_eos*0.90 and 10000 > eos*eos_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-EOS", 200000)
+            #         post_message(myToken,"#amm", "EOS gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_eos")
@@ -283,12 +283,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-ETC", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_etc")
-            if current_price_etc < yesterday_price_etc*0.90 and 10000 > etc*etc_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-ETC", 200000)
-                    post_message(myToken,"#amm", "ETC gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_etc")
+            # if current_price_etc < yesterday_price_etc*0.90 and 10000 > etc*etc_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-ETC", 200000)
+            #         post_message(myToken,"#amm", "ETC gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_etc")
@@ -339,12 +339,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-XRP", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_xrp")
-            if current_price_xrp < yesterday_price_xrp*0.90 and 10000 > xrp*xrp_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-XRP", 200000)
-                    post_message(myToken,"#amm", "XRP gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_xrp")
+            # if current_price_xrp < yesterday_price_xrp*0.90 and 10000 > xrp*xrp_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-XRP", 200000)
+            #         post_message(myToken,"#amm", "XRP gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_xrp")
@@ -395,12 +395,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-BTC", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_btc")
-            if current_price_btc < yesterday_price_btc*0.90 and 10000 > btc*btc_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-BTC", 200000)
-                    post_message(myToken,"#amm", "BTC gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_btc")
+            # if current_price_btc < yesterday_price_btc*0.90 and 10000 > btc*btc_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-BTC", 200000)
+            #         post_message(myToken,"#amm", "BTC gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_btc")
@@ -451,12 +451,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-ADA", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_ada")
-            if current_price_ada < yesterday_price_ada*0.90 and 10000 > ada*ada_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-ADA", 200000)
-                    post_message(myToken,"#amm", "ADA gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_ada")
+            # if current_price_ada < yesterday_price_ada*0.90 and 10000 > ada*ada_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-ADA", 200000)
+            #         post_message(myToken,"#amm", "ADA gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_ada")
@@ -507,12 +507,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-BCH", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_bch")
-            if current_price_bch < yesterday_price_bch*0.90 and 10000 > bch*bch_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-BCH", 200000)
-                    post_message(myToken,"#amm", "BCH gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_bch")
+            # if current_price_bch < yesterday_price_bch*0.90 and 10000 > bch*bch_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-BCH", 200000)
+            #         post_message(myToken,"#amm", "BCH gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_bch")
@@ -563,12 +563,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-VET", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_vet")
-            if current_price_vet < yesterday_price_vet*0.90 and 10000 > vet*vet_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-VET", 200000)
-                    post_message(myToken,"#amm", "VET gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_vet")
+            # if current_price_vet < yesterday_price_vet*0.90 and 10000 > vet*vet_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-VET", 200000)
+            #         post_message(myToken,"#amm", "VET gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_vet")
@@ -619,12 +619,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-NEO", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_neo")
-            if current_price_neo < yesterday_price_neo*0.90 and 10000 > neo*neo_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-NEO", 200000)
-                    post_message(myToken,"#amm", "NEO gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_neo")
+            # if current_price_neo < yesterday_price_neo*0.90 and 10000 > neo*neo_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-NEO", 200000)
+            #         post_message(myToken,"#amm", "NEO gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_neo")
@@ -675,12 +675,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-LINK", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_link")
-            if current_price_link < yesterday_price_link*0.90 and 10000 > link*link_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-LINK", 200000)
-                    post_message(myToken,"#amm", "LINK gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_link")
+            # if current_price_link < yesterday_price_link*0.90 and 10000 > link*link_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-LINK", 200000)
+            #         post_message(myToken,"#amm", "LINK gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_link")
@@ -731,12 +731,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-BAT", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_bat")
-            if current_price_bat < yesterday_price_bat*0.90 and 10000 > bat*bat_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-BAT", 200000)
-                    post_message(myToken,"#amm", "BAT gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_bat")
+            # if current_price_bat < yesterday_price_bat*0.90 and 10000 > bat*bat_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-BAT", 200000)
+            #         post_message(myToken,"#amm", "BAT gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_bat")
@@ -787,12 +787,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-LTC", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_ltc")
-            if current_price_ltc < yesterday_price_ltc*0.90 and 10000 > ltc*ltc_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-LTC", 200000)
-                    post_message(myToken,"#amm", "LTC gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_ltc")
+            # if current_price_ltc < yesterday_price_ltc*0.90 and 10000 > ltc*ltc_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-LTC", 200000)
+            #         post_message(myToken,"#amm", "LTC gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_ltc")
@@ -843,12 +843,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-BTG", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_btg")
-            if current_price_btg < yesterday_price_btg*0.90 and 10000 > btg*btg_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-BTG", 200000)
-                    post_message(myToken,"#amm", "BTG gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_btg")
+            # if current_price_btg < yesterday_price_btg*0.90 and 10000 > btg*btg_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-BTG", 200000)
+            #         post_message(myToken,"#amm", "BTG gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_btg")
@@ -899,12 +899,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-PCI", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_pci")
-            if current_price_pci < yesterday_price_pci*0.90 and 10000 > pci*pci_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-PCI", 200000)
-                    post_message(myToken,"#amm", "PCI gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_pci")
+            # if current_price_pci < yesterday_price_pci*0.90 and 10000 > pci*pci_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-PCI", 200000)
+            #         post_message(myToken,"#amm", "PCI gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_pci")
@@ -955,12 +955,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-QTUM", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_qtum")
-            if current_price_qtum < yesterday_price_qtum*0.90 and 10000 > qtum*qtum_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-QTUM", 200000)
-                    post_message(myToken,"#amm", "QTUM gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_qtum")
+            # if current_price_qtum < yesterday_price_qtum*0.90 and 10000 > qtum*qtum_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-QTUM", 200000)
+            #         post_message(myToken,"#amm", "QTUM gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_qtum")
@@ -1011,12 +1011,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-DOT", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_dot")
-            if current_price_dot < yesterday_price_dot*0.90 and 10000 > dot*dot_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-DOT", 200000)
-                    post_message(myToken,"#amm", "DOT gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_dot")
+            # if current_price_dot < yesterday_price_dot*0.90 and 10000 > dot*dot_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-DOT", 200000)
+            #         post_message(myToken,"#amm", "DOT gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_dot")
@@ -1067,12 +1067,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-XLM", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_xlm")
-            if current_price_xlm < yesterday_price_xlm*0.90 and 10000 > xlm*xlm_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-XLM", 200000)
-                    post_message(myToken,"#amm", "XLM gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_xlm")
+            # if current_price_xlm < yesterday_price_xlm*0.90 and 10000 > xlm*xlm_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-XLM", 200000)
+            #         post_message(myToken,"#amm", "XLM gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_xlm")
@@ -1123,12 +1123,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-CHZ", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_chz")
-            if current_price_chz < yesterday_price_chz*0.90 and 10000 > chz*chz_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-CHZ", 200000)
-                    post_message(myToken,"#amm", "CHZ gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_chz")
+            # if current_price_chz < yesterday_price_chz*0.90 and 10000 > chz*chz_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-CHZ", 200000)
+            #         post_message(myToken,"#amm", "CHZ gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_chz")
@@ -1179,12 +1179,12 @@ while True:
                     time.sleep(0.2)
                     buy_result = upbit.buy_market_order("KRW-SNT", 5000)
 
-            #하락장 매수 시나리오 : 가즈아
-            print ("gazua_snt")
-            if current_price_snt < yesterday_price_snt*0.90 and 10000 > snt*snt_avg :
-                if krw > 200200:
-                    buy_result = upbit.buy_market_order("KRW-SNT", 200000)
-                    post_message(myToken,"#amm", "SNT gazua: 하락장")
+            # #하락장 매수 시나리오 : 가즈아
+            # print ("gazua_snt")
+            # if current_price_snt < yesterday_price_snt*0.90 and 10000 > snt*snt_avg :
+            #     if krw > 200200:
+            #         buy_result = upbit.buy_market_order("KRW-SNT", 200000)
+            #         post_message(myToken,"#amm", "SNT gazua: 하락장")
 
             #평단가 1%이상 하락시, 팔아
             print ("sonjul_snt")
